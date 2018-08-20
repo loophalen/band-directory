@@ -84,3 +84,57 @@ Processing by BandsController#index as */*
 Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/bands/1" for 127.0.0.1 at 2018-08-20 09:08:15 -0400
+Processing by BandsController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find' for Band:Class):
+  
+app/controllers/bands_controller.rb:9:in `show'
+Started GET "/bands" for 127.0.0.1 at 2018-08-20 09:08:44 -0400
+Processing by BandsController#index as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bands/1" for 127.0.0.1 at 2018-08-20 09:08:51 -0400
+Processing by BandsController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find' for Band:Class):
+  
+app/controllers/bands_controller.rb:9:in `show'
+Started GET "/bands/1" for 127.0.0.1 at 2018-08-20 09:11:51 -0400
+Processing by BandsController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `results' for Band:Class):
+  
+app/models/band.rb:19:in `find'
+app/controllers/bands_controller.rb:9:in `show'
+Started GET "/bands/1" for 127.0.0.1 at 2018-08-20 09:12:17 -0400
+Processing by BandsController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `fist' for #<PG::Result:0x007f92da671cf8>
+Did you mean?  first):
+  
+app/models/band.rb:21:in `find'
+app/controllers/bands_controller.rb:9:in `show'
+Started GET "/bands/1" for 127.0.0.1 at 2018-08-20 09:12:26 -0400
+Processing by BandsController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+

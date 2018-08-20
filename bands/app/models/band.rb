@@ -14,4 +14,16 @@ class Band
             }
         end 
     end 
+
+    def self.find(id)
+        results = DB.exec("SELECT * FROM bands WHERE id=#{id};")
+        return   {
+            "id" => results.first["id"].to_i, 
+            "name" => results.first["name"], 
+            "image" => results.first["image"], 
+            "description" => results.first["description"], 
+            "website" => results.first["website"],
+        }
+    end 
+
 end 
