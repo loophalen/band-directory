@@ -24,6 +24,8 @@ class BandForm extends React.Component {
     }
 
     handleChange(e){
+        console.log(e.target.value)
+        console.log(e.target.id)
         this.setState({[e.target.id]: e.target.value})
     }
 
@@ -34,9 +36,10 @@ class BandForm extends React.Component {
 
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form>
                 <input 
                 name='name'
+                id='name'
                 placeholder="Band Name" 
                 value={this.state.name} 
                 onChange={this.handleChange} 
@@ -44,6 +47,7 @@ class BandForm extends React.Component {
                 <br />
                 <input 
                 name='image'
+                id='image'
                 placeholder="Image" 
                 value={this.state.image} 
                 onChange={this.handleChange}   
@@ -51,13 +55,15 @@ class BandForm extends React.Component {
                 <br />
                 <input 
                 name='description'
+                id='description'
                 placeholder="Description" 
-                value={this.state.descritpion} 
+                value={this.state.description} 
                 onChange={this.handleChange}  
                 />
                 <br />
                 <input 
                 name='website'
+                id='website'
                 placeholder="Website" 
                 value={this.state.website} 
                 onChange={this.handleChange} 

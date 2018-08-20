@@ -14,6 +14,7 @@ class App extends React.Component {
       <div>
         <Header/>
         <BandForm />
+        <Bands />
  
 
       </div>
