@@ -17,7 +17,7 @@ class BandForm extends React.Component {
             this.setState({
                 name: this.props.band.title,
                 image: this.props.band.image, 
-                description: this.props.band.description, 
+                description: this.props.band.description,
                 website: this.props.band.website
             })
         }
@@ -34,7 +34,7 @@ class BandForm extends React.Component {
 
     render(){
         return(
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <input 
                 name='name'
                 placeholder="Band Name" 
