@@ -1,0 +1,9 @@
+.header{
+    display: flex;  
+    align-items: center; 
+    background-color: black; 
+}
+
+.header-title{
+    color: white; 
+}

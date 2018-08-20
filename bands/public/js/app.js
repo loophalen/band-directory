@@ -1,4 +1,27 @@
+class Header extends React.Component{
+  render(){
+    return(
+      <div class="header">
+        <h1 className="header-title">What's the Frequency</h1>
+      </div>
+    )
+  }
+}
+
+class App extends React.Component {
+  render(){
+    return (
+      <div>
+        <Header/>
+        <BandForm />
+ 
+
+      </div>
+    )
+  }
+}
+
 ReactDOM.render(
-    <h1>Tofu Baby</h1>,
+    <App />,
     document.querySelector('main')
   );
