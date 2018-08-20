@@ -10,7 +10,7 @@ class BandsController < ApplicationController
     end 
 
     def create 
-        render json: Band.create(params["Band"])
+        render json: Band.create(params["band"])
     end 
 
     def delete 
@@ -18,7 +18,7 @@ class BandsController < ApplicationController
     end 
 
     def update
-        render json: Band.update(params["id"], params["Band"])
+        render json: Band.update(params["id"], params["band"])
     end 
     
 end 

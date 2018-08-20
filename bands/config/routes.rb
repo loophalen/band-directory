@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/bands/:id', to: 'bands#show'
   post '/bands', to: 'bands#create'
   delete 'bands/:id', to: 'bands#delete'
-  put '/books/:id', to: 'bands#update'
+  put '/bands/:id', to: 'bands#update'
 
 
 end
