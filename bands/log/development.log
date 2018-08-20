@@ -1035,3 +1035,201 @@ LINE 2: ...               SET name='milk music music', image=milk, desc...
 app/models/band.rb:53:in `exec'
 app/models/band.rb:53:in `update'
 app/controllers/bands_controller.rb:21:in `update'
+Started PUT "/bands/5" for 127.0.0.1 at 2018-08-20 10:53:45 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"5", "name"=>"milk music music", "image"=>"milk", "description"=>"milk", "website"=>"milk", "band"=>{"id"=>"5", "name"=>"milk music music", "image"=>"milk", "description"=>"milk", "website"=>"milk"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::UndefinedColumn (ERROR:  column "milk" does not exist
+LINE 2: ...               SET name='milk music music', image=milk, desc...
+                                                             ^
+):
+  
+app/models/band.rb:53:in `exec'
+app/models/band.rb:53:in `update'
+app/controllers/bands_controller.rb:21:in `update'
+Started PUT "/bands/4" for 127.0.0.1 at 2018-08-20 10:54:46 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"4", "name"=>"milk music music", "image"=>"milk", "description"=>"milk", "website"=>"milk", "band"=>{"id"=>"4", "name"=>"milk music music", "image"=>"milk", "description"=>"milk", "website"=>"milk"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::UndefinedColumn (ERROR:  column "milk" does not exist
+LINE 2: ...               SET name='milk music music', image=milk, desc...
+                                                             ^
+):
+  
+app/models/band.rb:53:in `exec'
+app/models/band.rb:53:in `update'
+app/controllers/bands_controller.rb:21:in `update'
+Started PUT "/bands/4" for 127.0.0.1 at 2018-08-20 11:34:03 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"4", "name"=>"milk music music", "image"=>"", "description"=>"milk", "website"=>"milk", "band"=>{"id"=>"4", "name"=>"milk music music", "image"=>"", "description"=>"milk", "website"=>"milk"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ...               SET name='milk music music', image=, descript...
+                                                             ^
+):
+  
+app/models/band.rb:53:in `exec'
+app/models/band.rb:53:in `update'
+app/controllers/bands_controller.rb:21:in `update'
+Started PUT "/bands/4" for 127.0.0.1 at 2018-08-20 11:34:11 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"4", "name"=>"milk music music", "image"=>"", "description"=>"milk", "website"=>"", "band"=>{"id"=>"4", "name"=>"milk music music", "image"=>"", "description"=>"milk", "website"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2: ...               SET name='milk music music', image=, descript...
+                                                             ^
+):
+  
+app/models/band.rb:53:in `exec'
+app/models/band.rb:53:in `update'
+app/controllers/bands_controller.rb:21:in `update'
+Started PUT "/bands/4" for 127.0.0.1 at 2018-08-20 11:34:24 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"4", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>"", "band"=>{"id"=>"4", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>""}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2:                 SET name='milk', image=, description=milk, w...
+                                               ^
+):
+  
+app/models/band.rb:53:in `exec'
+app/models/band.rb:53:in `update'
+app/controllers/bands_controller.rb:21:in `update'
+Started GET "/bands" for 127.0.0.1 at 2018-08-20 11:34:34 -0400
+Processing by BandsController#index as */*
+  Parameters: {"band"=>{}}
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/bands/5" for 127.0.0.1 at 2018-08-20 11:34:51 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>"", "band"=>{"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2:                 SET name='milk', image=, description=milk, w...
+                                               ^
+):
+  
+app/models/band.rb:53:in `exec'
+app/models/band.rb:53:in `update'
+app/controllers/bands_controller.rb:21:in `update'
+Started PUT "/bands/5" for 127.0.0.1 at 2018-08-20 11:35:04 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>"", "band"=>{"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2:                 SET name='milk', image=, description=milk, w...
+                                               ^
+):
+  
+app/models/band.rb:53:in `exec'
+app/models/band.rb:53:in `update'
+app/controllers/bands_controller.rb:21:in `update'
+Started GET "/bands" for 127.0.0.1 at 2018-08-20 11:35:14 -0400
+Processing by BandsController#index as */*
+  Parameters: {"band"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/bands/5" for 127.0.0.1 at 2018-08-20 11:35:23 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>"", "band"=>{"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2:                 SET name='milk', image=, description=milk, w...
+                                               ^
+):
+  
+app/models/band.rb:53:in `exec'
+app/models/band.rb:53:in `update'
+app/controllers/bands_controller.rb:21:in `update'
+Started PUT "/bands/5" for 127.0.0.1 at 2018-08-20 11:39:16 -0400
+  
+SyntaxError (/Users/blandhalen/Documents/dev projects/band-directory/bands/app/models/band.rb:69: can't find string "SQL" anywhere before EOF
+/Users/blandhalen/Documents/dev projects/band-directory/bands/app/models/band.rb:54: syntax error, unexpected end-of-input):
+  
+app/models/band.rb:69: can't find string "SQL" anywhere before EOF
+app/models/band.rb:54: syntax error, unexpected end-of-input
+Started PUT "/bands/5" for 127.0.0.1 at 2018-08-20 11:39:54 -0400
+  
+SyntaxError (/Users/blandhalen/Documents/dev projects/band-directory/bands/app/models/band.rb:71: can't find string "SQL" anywhere before EOF
+/Users/blandhalen/Documents/dev projects/band-directory/bands/app/models/band.rb:54: syntax error, unexpected end-of-input):
+  
+app/models/band.rb:71: can't find string "SQL" anywhere before EOF
+app/models/band.rb:54: syntax error, unexpected end-of-input
+Started PUT "/bands/5" for 127.0.0.1 at 2018-08-20 11:40:01 -0400
+  
+SyntaxError (/Users/blandhalen/Documents/dev projects/band-directory/bands/app/models/band.rb:70: can't find string "SQL" anywhere before EOF
+/Users/blandhalen/Documents/dev projects/band-directory/bands/app/models/band.rb:54: syntax error, unexpected end-of-input):
+  
+app/models/band.rb:70: can't find string "SQL" anywhere before EOF
+app/models/band.rb:54: syntax error, unexpected end-of-input
+Started PUT "/bands/5" for 127.0.0.1 at 2018-08-20 11:40:24 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>"", "band"=>{"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2:                 SET name='milk', image=, description=milk, w...
+                                               ^
+):
+  
+app/models/band.rb:53:in `exec'
+app/models/band.rb:53:in `update'
+app/controllers/bands_controller.rb:21:in `update'
+Started PUT "/bands/5" for 127.0.0.1 at 2018-08-20 11:43:23 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>"", "band"=>{"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+PG::SyntaxError (ERROR:  unterminated quoted string at or near "'''
+                WHERE id=5
+                RETURNING id, name, image, description, website;
+"
+LINE 2: ...  SET name='milk', image='', description='milk', website='''
+                                                                    ^
+):
+  
+app/models/band.rb:53:in `exec'
+app/models/band.rb:53:in `update'
+app/controllers/bands_controller.rb:21:in `update'
+Started PUT "/bands/5" for 127.0.0.1 at 2018-08-20 11:43:43 -0400
+Processing by BandsController#update as */*
+  Parameters: {"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>"", "band"=>{"id"=>"5", "name"=>"milk", "image"=>"", "description"=>"milk", "website"=>""}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bands" for 127.0.0.1 at 2018-08-20 11:43:54 -0400
+Processing by BandsController#index as */*
+  Parameters: {"band"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+

@@ -53,7 +53,7 @@ class Band
         results = DB.exec(
             <<-SQL
                 UPDATE bands
-                SET name='#{opts["name"]}', image=#{opts["image"]}, description=#{opts["description"]}, website=#{opts["website"]}
+                SET name='#{opts["name"]}', image='#{opts["image"]}', description='#{opts["description"]}', website='#{opts["website"]}'
                 WHERE id=#{id}
                 RETURNING id, name, image, description, website;
             SQL
@@ -66,5 +66,5 @@ class Band
             "website" => results.first["website"]
         }
     end
-
+    
 end 
