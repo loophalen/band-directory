@@ -13,9 +13,7 @@ class App extends React.Component {
     return (
       <div>
         <Header/>
-        <BandForm />
         <Bands />
- 
 
       </div>
     )
